@@ -207,16 +207,19 @@ docker logs --follow --tail 10 --timestamps [containerId]
 `
 
 Bash:
+
 `
 docker exec -it [containerId] /bin/bash
 `
 
 Attach:
+
 `
 docker container attach [containerId] 
 `
 
 Remove container
+
 `
 docker container rm [containerId]
 `
@@ -238,11 +241,13 @@ docker container run -it [imageId]  bash
 ```
 
 Buildar todos containers de um docker-compose.yml
+
 `
 docker-compose build
 `
 
 Iniciar todos containers de um docker-compose.yml
+
 `
 docker-compose up
 `
