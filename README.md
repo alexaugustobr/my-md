@@ -216,7 +216,10 @@ Remote debug
 
 Intelij Run > Remote > Debug (localhost:8001)
 ```
--agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8001
+#gradle
+#jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000']
+
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000
 ```
 
 ## Containers
