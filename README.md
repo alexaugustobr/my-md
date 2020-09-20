@@ -198,6 +198,20 @@ curl --location --request POST 'http://192.168.1.1:8081/api/form' \
 --form 'file=@/home/user/downloads/arquivo.pdf'
 ```
 
+## GCP
+
+init
+```
+gcloud init
+```
+
+logoff
+```
+gcloud auth revoke
+```
+
+
+
 ## Containers
 
 ### Geral
