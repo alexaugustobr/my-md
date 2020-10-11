@@ -169,6 +169,13 @@ Info
 printf '\xFF\xFF\xFF\xFFgetinfo' | nc -u -n -w 1 127.0.0.1 29070
 ```
 
+## Java
+
+### Update Alternatives
+```
+sudo update-alternatives --config java
+```
+
 ## Maven
 
 ### Genereate multimodule
