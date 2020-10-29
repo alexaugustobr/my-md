@@ -139,6 +139,12 @@ sudo usermod --append --groups libvirt `whoami`
 
 ```
 
+## Networkd speed test
+
+``` 
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+```
+
 ## SSH
 
 ### gerar sh
