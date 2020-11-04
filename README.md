@@ -289,7 +289,23 @@ Iniciar todos containers de um docker-compose.yml
 docker-compose up
 `
 
+docker log file location
+`
+/var/lib/docker/containers/[container-id]/[container-id]-json.log
+/var/lib/docker/containers/[container-id]/local-logs
+`
 
+`
+docker inspect --format='{{.LogPath}}'
+`
+
+run docker with local log
+`
+#https://docs.docker.com/config/containers/logging/local/
+docker run \
+      --log-driver local --log-opt max-size=10m \
+      alpine echo hello world
+`
 
 Remover imagem docker
 `
