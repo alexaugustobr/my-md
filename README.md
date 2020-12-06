@@ -247,8 +247,31 @@ arecord -f cd - | aplay -
 
 arecord -f cd - | tee output.wav | aplay -
 ```
+### Microphone clean
 
+```
+#https://medium.com/@tim_73574/ubuntu-microphone-noise-cancellation-and-volume-auto-adjusted-issue-2c79678542bb
 
+>> sudo vim /etc/pulse/default.pa
+### Enable Echo/Noise-Cancelation
+load-module module-echo-cancel aec_method=webrtc aec_args="analog_gain_control=0 digital_gain_control=1" source_name=echoCancel_source sink_name=echoCancel_sink
+set-default-source echoCancel_source
+set-default-sink echoCancel_sink
+>> pulseaudio -k
+>> pulseaudio --start
+
+```
+### Pulseaudio control
+
+```
+apt install pavucontrol
+pavucontrol
+```
+
+### Restart pulseaudio
+```
+pulseaudio -k ; pulseaudio --start
+```
 
 ## Containers
 
