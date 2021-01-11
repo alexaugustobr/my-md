@@ -356,10 +356,10 @@ Remover:
         - all dangling images
         - all build cache
 ```
-docker system prune && 
-docker image prune -a  && 
-docker rm -f $(docker ps -a -q) &&
-docker volume rm $(docker volume ls -q) &&
+docker system prune 
+docker volume prune
+
+docker image prune
 
 #docker-compose rm -f 
 ```
