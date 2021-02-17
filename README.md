@@ -388,6 +388,11 @@ Referencias:
 docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=default -p 127.0.0.1:3306:3306/tcp -d mysql:latest --default-authentication-plugin=mysql_native_password
 ```
 
+Backup restore:
+```
+mysql --host=127.0.0.1 --port=3306 -u user -p database < ./bkp.sql
+```
+
 ### Postgresql
 
 ```
