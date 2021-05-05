@@ -111,6 +111,11 @@ git clone git@github.com:user/repo.git --config core.sshCommand="ssh -i ~/.ssh/i
 
 ## Utils
 
+### Find Large Files Using the find Command
+```bash
+sudo find . -xdev -type f -size +100M
+```
+
 ### Copy iso
 ```
 sudo dd status=progress if=name-of.iso of=/dev/sdb
