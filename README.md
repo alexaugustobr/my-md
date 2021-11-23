@@ -180,6 +180,15 @@ Info
 printf '\xFF\xFF\xFF\xFFgetinfo' | nc -u -n -w 1 127.0.0.1 29070
 ```
 
+## Audio
+
+### Fix HDMI not detecting audio
+
+```
+pulseaudio -k
+```
+https://itsfoss.com/how-to-fix-no-sound-through-hdmi-in-external-monitor-in-ubuntu/
+
 ## Java
 
 ### Update Alternatives
