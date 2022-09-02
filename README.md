@@ -447,3 +447,21 @@ docker stop some-rabbit && docker rm some-rabbit
 
 
 ```
+
+
+# Clean the mess
+
+## Remove all node_modules folder
+`
+find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+`
+
+
+## Remove all jar files
+`
+find . -name "*.jar" -type f -delete
+`
+
+
+
+
