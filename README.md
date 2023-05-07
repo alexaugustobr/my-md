@@ -463,5 +463,9 @@ find . -name "*.jar" -type f -delete
 `
 
 
+# show folder size
+`
+du -sh /home/ubuntu/registry/*
+`
 
 
