@@ -4,6 +4,16 @@
 sudo apt install git htop synaptic curl wget openjdk-8-jdk-headless openjdk-8-doc openjdk-8-source openjdk-8-demo maven postgresql-client mysql-client docker.io virtualbox vlc ssh keepassxc
 `
 
+## Install deb package
+sudo dpkg -i code_1.46.1-1592428892_amd64.deb
+
+## List deb package content
+sudo dpkg-deb -c mysql-client-core-8.0
+
+## List apt package content
+sudo dpkg-query -L  mysql-client-core-8.0
+
+
 ## IDE's & Util's
 
 ### VsCode
